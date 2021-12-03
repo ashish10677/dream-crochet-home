@@ -10,6 +10,7 @@ import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js"
 import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 
+import crochetImg from "images/164056.jpeg";
 import chefIconImageSrc from "images/chef-icon.svg";
 import celebrationIconImageSrc from "images/celebration-icon.svg";
 import shopIconImageSrc from "images/shop-icon.svg";
@@ -23,46 +24,22 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero
-        heading={<>Delicious & Affordable <HighlightedText>Meals Near You.</HighlightedText></>}
+        heading={<>Amazing & Affordable <HighlightedText>Crochet for you.</HighlightedText></>}
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        // imageSrc="https://via.placeholder.com/640x427"
+        imageSrc={crochetImg}
         imageCss={imageCss}
         imageDecoratorBlob={true}
         primaryButtonText="Order Now"
-        watchVideoButtonText="Meet The Chefs"
+        watchVideoYoutubeUrl=""
+        watchVideoButtonText="Check out our latest video"
       />
-      <MainFeature
-        subheading={<Subheading>Established Since 2021</Subheading>}
-        heading={
-          <>
-            We've been serving for
-            <wbr /> <HighlightedText>over 5 years.</HighlightedText>
-          </>
-        }
-        description={
-          <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-            <br />
-            <br />
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </Description>
-        }
-        buttonRounded={false}
-        textOnLeft={false}
-        primaryButtonText="Latest Offers"
-        imageSrc={
-          "https://images.unsplash.com/photo-1460306855393-0410f61241c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
-        }
-        imageCss={imageCss}
-        imageDecoratorBlob={true}
-        imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
-      />
+
       {/* TabGrid Component also accepts a tabs prop to customize the tabs and its content directly. Please open the TabGrid component file to see the structure of the tabs props.*/}
       <TabGrid
         heading={
           <>
-            Checkout our <HighlightedText>menu.</HighlightedText>
+            Checkout our <HighlightedText>products.</HighlightedText>
           </>
         }
       />

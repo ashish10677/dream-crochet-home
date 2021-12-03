@@ -104,7 +104,7 @@ import DreamCrochet from "demos/DreamCrochet";
 
 // import ComponentRenderer from "ComponentRenderer.js";
 // import MainLandingPage from "MainLandingPage.js";
-import ThankYouPage from "ThankYouPage.js";
+// import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -116,9 +116,6 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/thank-you">
-          <ThankYouPage />
-        </Route>
         <Route path="/">
           <DreamCrochet />
         </Route>
@@ -132,7 +129,7 @@ export default function App() {
 // export default AgencyLandingPage;
 // export default SaaSProductLandingPage;
 // export default RestaurantLandingPage;
-export default DreamCrochet;
+// export default DreamCrochet;
 // export default ServiceLandingPage;
 // export default HostingCloudLandingPage;
 
